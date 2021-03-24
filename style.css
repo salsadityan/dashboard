@@ -1,0 +1,382 @@
+<style>
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* Header section start */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.color-default{
+  color: #000000; 
+}
+
+.color-primary{
+  color: #ffffff;
+}
+
+.img-fluid {
+  max-width: 100%; 
+  height: auto;
+}
+
+.m-f{
+  font-family: 'Aclonica', sans-serif;
+  text-transform: uppercase;
+}
+
+body{
+  background-image: url(../images/back-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  text-align: justify;
+  color: #000000;
+}
+
+main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* container-clearfix */
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px){
+  .container{
+    width: 70%;
+  }
+}
+
+.header{
+  height: 100vh;
+  color: #ffffff;
+
+}
+
+/* inherited from .header */
+.header-content{
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.header-content h1, .intro-content h1, .contact-section h1{
+  font-size: 42px;
+}
+
+.header-content h2 {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px){   
+  .header-content h2 {
+    padding: 80px 0;
+  }
+}
+
+.header-content h2 span{
+  color: #f1c11a;
+}
+
+.btn{
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15px;
+  display: inline-block;
+  transition: all 400ms ease-in-out;
+}
+
+.btn-fill{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-fill:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+}
+
+.btn-trans:hover{
+  background-color: #f1c11a;
+  color: #000000;
+  border-color: transparent;
+}
+
+.intro{
+  background-color: #ffffff;
+  padding: 15vh 0;
+}
+
+.intro-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-content div{
+  width: 50%;
+}
+
+.intro-text p{
+  color: #828282;
+  line-height: 1.6;
+}
+
+.services{
+  background-color: #f1c11a;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -15vh;
+}
+
+.service-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bucket{
+  margin-top: 80px;
+  color: #ffffff; 
+}
+
+@media (min-width: 768px){  
+  .bucket{
+    width: calc(100%/3); /* 3 paragraph with equal width */
+    margin-top: 80px;
+    color: #ffffff;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 130px;
+  }
+}
+
+.bucket:last-child{
+  margin-bottom: 80px;
+}
+
+.bucket p{
+  line-height: 25px;
+}
+
+.contact{
+  background-color: #ffffff;
+  padding: 10vh 0;
+  text-align: center;
+}
+
+input[type='text'], input[type=email], textarea{
+  width: 100%;
+  padding: 12px;
+  border-color: 1px solid #cccccc;
+}
+
+.contact-section div{
+  padding: 10px 3%;
+}
+
+.btn-submit{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-submit:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+  color: #000000;
+}
+
+footer{
+  background-color: #f1c11a;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -10vh;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px){  /*Alignment changes*/
+
+  .header-content h2{
+    font-size: 20px;
+  }
+
+  .intro-content{
+    display: block;
+    height: 90vh;
+  }
+
+  .intro-content div{
+    width: 100%;
+  }
+
+  .services{
+    clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  .service-content{
+    margin-top: -15vh;
+    padding-top: 1px;
+  }
+
+  .bucket{
+    width: 100%;
+    margin-top: 80px;
+  }
+}
+</style>
